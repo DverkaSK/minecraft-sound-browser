@@ -1,3 +1,4 @@
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
 import org.jetbrains.intellij.platform.gradle.TestFrameworkType
 
 plugins {
@@ -64,7 +65,10 @@ intellijPlatform {
     pluginVerification {
         ides {
             val local = providers.gradleProperty("verifierIdes").orNull
-            if (local != null) local.split(';').filter { it.isNotBlank() }.forEach { local(file(it)) } else recommended()
+            if (local != null) local.split(';').filter { it.isNotBlank() }.forEach { local(file(it)) } else {
+                ide(IntelliJPlatformType.IntellijIdeaCommunity, providers.gradleProperty("platformVersion").get())
+                ide(IntelliJPlatformType.IntellijIdeaUltimate, "2026.1.1")
+            }
         }
     }
 }
