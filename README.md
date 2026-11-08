@@ -15,8 +15,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/screenshots/browser-dark.png" width="420" alt="Sound browser and player">
-  <img src="docs/screenshots/inline.png" width="420" alt="Inline play buttons and the mini player">
+  <img src="docs/screenshots/overview.png" alt="Inline play buttons in the editor and the Minecraft Sounds tool window">
 </p>
 
 ## Features
@@ -28,6 +27,12 @@
   `ENTITY_ZOMBIE_HURT`, `Sound.ENTITY_ZOMBIE_HURT`, `minecraft:entity.zombie.hurt`
 - Favorites for the sounds you use most
 
+<p align="center">
+  <img src="docs/screenshots/browser-dark.png" width="320" alt="Sound browser and player, dark theme">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/browser-light.png" width="320" alt="Sound browser and player, light theme">
+</p>
+
 **Player**
 - Interactive waveform: click or drag to seek
 - Play / pause, stop, replay, loop
@@ -36,6 +41,11 @@
 - Per-file `volume` and `pitch` from `sounds.json` are applied, so the preview sounds like in-game
 
 **Editor integration**
+
+<p align="center">
+  <img src="docs/screenshots/inline.png" alt="Inline play buttons next to sound references and the mini player">
+</p>
+
 - A ▶ button right after every sound reference (several sounds on one line each get their own):
   - `Sound.ENTITY_PLAYER_LEVELUP` — Bukkit, Spigot, Paper; pre-1.9 names like `Sound.LEVEL_UP` too
   - `SoundEvents.ENTITY_PLAYER_LEVELUP` — Fabric (Yarn)
