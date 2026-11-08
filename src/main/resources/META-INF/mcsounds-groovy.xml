@@ -1,0 +1,8 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.inlayProvider language="Groovy"
+                                   implementationClass="ru.dverkask.mcsounds.editor.SoundInlayHintsProvider"/>
+        <codeInsight.lineMarkerProvider language="Groovy"
+                                        implementationClass="ru.dverkask.mcsounds.editor.SoundLineMarkerProvider"/>
+    </extensions>
+</idea-plugin>
