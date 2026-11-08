@@ -10,6 +10,8 @@
 </p>
 
 <p align="center">
+  <a href="https://plugins.jetbrains.com/plugin/35906-minecraft-sound-browser"><img src="https://img.shields.io/jetbrains/plugin/v/35906.svg?label=Marketplace" alt="Version"></a>
+  <a href="https://plugins.jetbrains.com/plugin/35906-minecraft-sound-browser"><img src="https://img.shields.io/jetbrains/plugin/d/35906.svg" alt="Downloads"></a>
   <a href="https://github.com/DverkaSK/minecraft-sound-browser/actions/workflows/build.yml"><img src="https://github.com/DverkaSK/minecraft-sound-browser/actions/workflows/build.yml/badge.svg" alt="Build"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
 </p>
@@ -70,6 +72,7 @@
 ## Installation
 
 - **Marketplace:** <kbd>Settings</kbd> › <kbd>Plugins</kbd> › <kbd>Marketplace</kbd> › search for **Minecraft Sound Browser** › <kbd>Install</kbd>
+  (or [open it on JetBrains Marketplace](https://plugins.jetbrains.com/plugin/35906-minecraft-sound-browser))
 - **Manually:** download the latest ZIP from [Releases](https://github.com/DverkaSK/minecraft-sound-browser/releases) and use
   <kbd>Settings</kbd> › <kbd>Plugins</kbd> › <kbd>⚙️</kbd> › <kbd>Install Plugin from Disk…</kbd>
 
