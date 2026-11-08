@@ -20,6 +20,12 @@
   <img src="docs/screenshots/overview.png" alt="Inline play buttons in the editor and the Minecraft Sounds tool window">
 </p>
 
+<p align="center">
+  <a href="https://youtu.be/De9SJF3p-5I"><img src="docs/screenshots/video.png" width="640" alt="Watch the demo video on YouTube"></a>
+  <br>
+  <a href="https://youtu.be/De9SJF3p-5I"><b>▶ Watch the 50-second demo</b></a>
+</p>
+
 ## Features
 
 **Sound browser**
