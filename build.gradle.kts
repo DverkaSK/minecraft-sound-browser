@@ -76,6 +76,8 @@ intellijPlatform {
 intellijPlatformTesting {
     runIde {
         register("runIdeForUiTests") {
+            type = IntelliJPlatformType.IntellijIdeaCommunity
+            version = providers.gradleProperty("platformVersion")
             task {
                 jvmArgumentProviders += CommandLineArgumentProvider {
                     listOf(

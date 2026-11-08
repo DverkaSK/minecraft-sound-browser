@@ -4,13 +4,9 @@ import com.intellij.codeInsight.daemon.DaemonCodeAnalyzer
 import com.intellij.codeInsight.daemon.GutterIconNavigationHandler
 import com.intellij.codeInsight.daemon.LineMarkerInfo
 import com.intellij.codeInsight.daemon.LineMarkerProviderDescriptor
-import com.intellij.openapi.application.ReadAction
 import com.intellij.openapi.editor.markup.GutterIconRenderer
-import com.intellij.openapi.fileEditor.FileEditorManager
 import com.intellij.openapi.project.ProjectManager
 import com.intellij.psi.PsiElement
-import com.intellij.psi.PsiFile
-import com.intellij.psi.PsiManager
 import ru.dverkask.mcsounds.McSoundsBundle
 import ru.dverkask.mcsounds.audio.PlayerState
 import ru.dverkask.mcsounds.audio.SoundPlayer
@@ -65,11 +61,7 @@ class GutterRefresher : SoundCatalogListener {
     override fun statusChanged(status: CatalogStatus) {
         if (status !is CatalogStatus.Ready) return
         for (project in ProjectManager.getInstance().openProjects) {
-            if (project.isDisposed) continue
-            val files = ReadAction.compute<List<PsiFile>, RuntimeException> {
-                FileEditorManager.getInstance(project).openFiles.mapNotNull { PsiManager.getInstance(project).findFile(it) }
-            }
-            files.forEach { DaemonCodeAnalyzer.getInstance(project).restart(it) }
+            if (!project.isDisposed) DaemonCodeAnalyzer.getInstance(project).restart()
         }
     }
 }
